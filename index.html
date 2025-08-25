@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
@@ -94,8 +95,11 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20">
-        <div class="max-w-4xl mx-auto text-center animate-fade-in">
+    <section id="home" class="min-h-screen flex justify-center px-6 pt-20">
+        <div class="max-w-4xl mx-auto text-center itens-center animate-fade-in">
+            <div class="mb-8 flex flex-col items-center justify-center h-60 shadow-lg rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-600/20 animate-float overflow-hidden">
+                <img src="/images/eucartoon-removebg-preview.png" alt="" class="w-full h-full object-contain">
+            </div>
             <div class="mb-8">
                 <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-600 bg-clip-text text-transparent ">
                     William Alves Santos
@@ -110,13 +114,13 @@
                     React & Next.js
                 </span>
                 <span class="px-4 py-2 bg-slate-800/50 rounded-full text-sm border border-slate-700 hover:border-blue-400 transition-colors duration-300">
-                    Node.js & Express
+                    HTML & JavaScript
                 </span>
                 <span class="px-4 py-2 bg-slate-800/50 rounded-full text-sm border border-slate-700 hover:border-blue-400 transition-colors duration-300">
                     TypeScript
                 </span>
                 <span class="px-4 py-2 bg-slate-800/50 rounded-full text-sm border border-slate-700 hover:border-blue-400 transition-colors duration-300">
-                    PostgreSQL
+                    tailwind
                 </span>
             </div>
 
@@ -124,9 +128,10 @@
                 <a href="#projects" class="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25">
                     Ver Projetos
                 </a>
-                <a href="#contact" class="px-8 py-3 border border-slate-600 rounded-lg hover:border-blue-400 hover:bg-slate-800/50 transition-all duration-300">
+                <a href="mailto:WilliamAlvesSantos13@outlook.com?subject=Solicitação%20de%20Projeto%20Freelancer&body=Oi,%20William!%0A%0AMeu%20nome%20%C3%A9%20[Nome%20do%20Cliente]%20e%20estou%20precisando%20de%20um%20desenvolvedor%20freelancer%20para%20[descrever%20o%20projeto,%20ex.:%20criar%20um%20sistema%20de%20cadastro%20online].%0A%0AGostaria%20de%20saber%20sua%20disponibilidade%20e%20estimativa%20de%20pre%C3%A7o.%20Posso%20enviar%20detalhes%20mais%20completos%20do%20projeto."class="px-8 py-3 border border-slate-600 rounded-lg hover:border-blue-400 hover:bg-slate-800/50 transition-all duration-300">
                     Contato
                 </a>
+
             </div>
         </div>
     </section>
@@ -154,7 +159,7 @@
                 <div class="flex justify-center">
                     <div class="w-64 h-64 bg-gradient-to-br from-blue-600/20 to-cyan-600/20 rounded-full flex items-center justify-center border border-slate-700 animate-float">
                         <div class="w-48 h-48 bg-gradient-to-br from-slate-800 to-slate-700 rounded-full flex items-center justify-center">
-                            <span class="text-6xl">👨‍💻</span>
+                            <i class="fa-solid fa-code text-5xl"></i>
                         </div>
                     </div>
                 </div>
@@ -176,9 +181,9 @@
                     <span class="text-sm font-medium">React</span>
                 </div>
                 
-                <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group">
-                    <i class="devicon-nextjs-original text-5xl mb-4 group-hover:animate-pulse"></i>
-                    <span class="text-sm font-medium">Next.js</span>
+                <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group">     
+                    <i class="devicon-html5-plain colored text-5xl mb-4"></i>
+                    <span class="text-sm font-medium">html</span>
                 </div>
                 
                 <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group">
@@ -193,43 +198,27 @@
                 
                 <!-- Backend -->
                 <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group">
-                    <i class="devicon-nodejs-original colored text-5xl mb-4 group-hover:animate-pulse"></i>
+                    <i class="devicon-nodejs-plain-wordmark colored text-5xl mb-4 group-hover:animate-pulse"></i>
                     <span class="text-sm font-medium">Node.js</span>
                 </div>
                 
                 <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group">
-                    <i class="devicon-express-original text-5xl mb-4 group-hover:animate-pulse"></i>
-                    <span class="text-sm font-medium">Express</span>
+                    <i class="devicon-bootstrap-plain colored text-5xl mb-4 group-hover:animate-pulse"></i>
+                    <span class="text-sm font-medium">Boostrap</span>
                 </div>
                 
                 <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group">
-                    <i class="devicon-postgresql-original colored text-5xl mb-4 group-hover:animate-pulse"></i>
-                    <span class="text-sm font-medium">PostgreSQL</span>
+                    <i class="devicon-javascript-plain colored text-5xl mb-4 group-hover:animate-pulse"></i>
+                    <span class="text-sm font-medium">JavaScript</span>
                 </div>
                 
                 <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group">
-                    <i class="devicon-mongodb-original colored text-5xl mb-4 group-hover:animate-pulse"></i>
-                    <span class="text-sm font-medium">MongoDB</span>
-                </div>
-                
-                <!-- Tools -->
-                <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group">
-                    <i class="devicon-git-original colored text-5xl mb-4 group-hover:animate-pulse"></i>
+                    <i class="devicon-git-plain colored text-5xl mb-4 group-hover:animate-pulse"></i>
                     <span class="text-sm font-medium">Git</span>
                 </div>
                 
                 <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group">
-                    <i class="devicon-docker-original colored text-5xl mb-4 group-hover:animate-pulse"></i>
-                    <span class="text-sm font-medium">Docker</span>
-                </div>
-                
-                <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group">
-                    <i class="devicon-amazonwebservices-original colored text-5xl mb-4 group-hover:animate-pulse"></i>
-                    <span class="text-sm font-medium">AWS</span>
-                </div>
-                
-                <div class="flex flex-col items-center p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group">
-                    <i class="devicon-figma-original colored text-5xl mb-4 group-hover:animate-pulse"></i>
+                    <i class="devicon-figma-plain colored text-5xl mb-4 group-hover:animate-pulse"></i>
                     <span class="text-sm font-medium">Figma</span>
                 </div>
             </div>
@@ -247,23 +236,23 @@
                 <!-- Project 1 -->
                 <div class="bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group overflow-hidden">
                     <div class="h-48 bg-gradient-to-br from-blue-600/20 to-cyan-600/20 flex items-center justify-center">
-                        <span class="text-4xl">🚀</span>
+                        <img src="/images/prevtempo.png" class="w-full h-full" alt="">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 group-hover:text-blue-400 transition-colors">
-                            E-commerce Platform
+                            Previsão do Tempo
                         </h3>
                         <p class="text-slate-300 mb-4">
-                            Plataforma completa de e-commerce com React, Node.js e PostgreSQL.
+                            Uma aplicação simples e funcional feita em React.js que permite consultar a previsão do tempo de qualquer cidade, utilizando a API da OpenWeatherMap.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">React</span>
-                            <span class="px-2 py-1 bg-green-600/20 text-green-300 rounded text-xs">Node.js</span>
-                            <span class="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs">PostgreSQL</span>
+                            <span class="px-2 py-1 bg-green-600/20 text-green-300 rounded text-xs">CSS</span>
+                            <span class="px-2 py-1 bg-purple-600/20 text-purple-300 rounded text-xs">API</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">Demo</a>
-                            <a href="#" class="text-slate-400 hover:text-slate-300 transition-colors">GitHub</a>
+                            <a href="https://telentweather.netlify.app/" class="text-blue-400 hover:text-blue-300 transition-colors">Link</a>
+                            <a href="https://github.com/WilliamAlves06/site-previsao-do-tempo.git" class="text-slate-400 hover:text-slate-300 transition-colors">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -271,23 +260,23 @@
                 <!-- Project 2 -->
                 <div class="bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group overflow-hidden">
                     <div class="h-48 bg-gradient-to-br from-green-600/20 to-emerald-600/20 flex items-center justify-center">
-                        <span class="text-4xl">📱</span>
+                        <img src="/images//devburguer.png" class="w-full h-full" alt="">                   
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 group-hover:text-blue-400 transition-colors">
-                            Task Manager App
+                            Dev Burguer
                         </h3>
                         <p class="text-slate-300 mb-4">
-                            Aplicativo de gerenciamento de tarefas com interface moderna e intuitiva.
+                            Um sistema moderno de hamburgueria online, feito para facilitar pedidos e encantar clientes.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">Next.js</span>
-                            <span class="px-2 py-1 bg-yellow-600/20 text-yellow-300 rounded text-xs">TypeScript</span>
-                            <span class="px-2 py-1 bg-green-600/20 text-green-300 rounded text-xs">MongoDB</span>
+                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">html</span>
+                            <span class="px-2 py-1 bg-yellow-600/20 text-yellow-300 rounded text-xs">JavaScript</span>
+                            <span class="px-2 py-1 bg-green-600/20 text-green-300 rounded text-xs">CSS</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">Demo</a>
-                            <a href="#" class="text-slate-400 hover:text-slate-300 transition-colors">GitHub</a>
+                            <a href="https://dev-burguer-delta.vercel.app/" class="text-blue-400 hover:text-blue-300 transition-colors">Link</a>
+                            <a href="https://github.com/WilliamAlves06/DevBurguer.git" class="text-slate-400 hover:text-slate-300 transition-colors">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -295,23 +284,23 @@
                 <!-- Project 3 -->
                 <div class="bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105 group overflow-hidden">
                     <div class="h-48 bg-gradient-to-br from-purple-600/20 to-pink-600/20 flex items-center justify-center">
-                        <span class="text-4xl">🎨</span>
+                        <img src="/images/turist.png" class="w-full h-full" alt="">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 group-hover:text-blue-400 transition-colors">
-                            Design System
+                            Turist - Guia de Viagem
                         </h3>
                         <p class="text-slate-300 mb-4">
-                            Sistema de design completo com componentes reutilizáveis e documentação.
+                            Turist é um site desenvolvido com foco em auxiliar turistas e viajantes a encontrarem os melhores destinos
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">React</span>
-                            <span class="px-2 py-1 bg-cyan-600/20 text-cyan-300 rounded text-xs">Tailwind</span>
-                            <span class="px-2 py-1 bg-orange-600/20 text-orange-300 rounded text-xs">Storybook</span>
+                            <span class="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs">html</span>
+                            <span class="px-2 py-1 bg-cyan-600/20 text-cyan-300 rounded text-xs">BootsTrap</span>
+                            <span class="px-2 py-1 bg-orange-600/20 text-orange-300 rounded text-xs">JavaScript</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">Demo</a>
-                            <a href="#" class="text-slate-400 hover:text-slate-300 transition-colors">GitHub</a>
+                            <a href="https://turistt.netlify.app/" class="text-blue-400 hover:text-blue-300 transition-colors">Link</a>
+                            <a href="https://github.com/WilliamAlves06/Turist.git" class="text-slate-400 hover:text-slate-300 transition-colors">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -330,23 +319,17 @@
             </p>
             
             <div class="flex flex-wrap justify-center gap-6 mb-12">
-                <a href="mailto:william@example.com" class="flex items-center space-x-3 px-6 py-3 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105">
-                    <span class="text-2xl">📧</span>
-                    <span>william@example.com</span>
+                
+                <a href="https://linkedin.com/in/william" class="flex items-center space-x-3 px-6 py-3 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105"> 
+                    <i class="devicon-linkedin-plain colored text-5xl"></i>
                 </a>
                 
-                <a href="https://linkedin.com/in/william" class="flex items-center space-x-3 px-6 py-3 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105">
-                    <span class="text-2xl">💼</span>
-                    <span>LinkedIn</span>
-                </a>
-                
-                <a href="https://github.com/william" class="flex items-center space-x-3 px-6 py-3 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105">
-                    <span class="text-2xl">🐙</span>
-                    <span>GitHub</span>
+                <a href="https://github.com/WilliamAlves06" class="flex items-center space-x-3 px-6 py-3 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-blue-400 transition-all duration-300 hover:transform hover:scale-105">                    
+                    <i class="devicon-github-original-wordmark text-5xl"></i>
                 </a>
             </div>
 
-            <a href="mailto:william@example.com" class="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25">
+            <a href="mailto:WilliamAlvesSantos13@outlook.com?subject=Solicitação%20de%20Projeto%20Freelancer&body=Oi,%20William!%0A%0AMeu%20nome%20%C3%A9%20[Nome%20do%20Cliente]%20e%20estou%20precisando%20de%20um%20desenvolvedor%20freelancer%20para%20[descrever%20o%20projeto,%20ex.:%20criar%20um%20sistema%20de%20cadastro%20online].%0A%0AGostaria%20de%20saber%20sua%20disponibilidade%20e%20estimativa%20de%20pre%C3%A7o.%20Posso%20enviar%20detalhes%20mais%20completos%20do%20projeto."class="px-8 py-3 border border-slate-600 rounded-lg hover:border-blue-400 hover:bg-slate-800/50 transition-all duration-300" class="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25">
                 Entrar em Contato
             </a>
         </div>
