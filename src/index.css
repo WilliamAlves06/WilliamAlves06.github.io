@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===========================================================
+   Estilos globais — Wrapped do Casal
+   Tema escuro, neon verde, experiência vertical estilo stories
+   =========================================================== */
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-black font-body text-white antialiased;
+  overscroll-behavior: none;
+}
+
+/* "Moldura de celular" — no desktop a experiência fica centralizada
+   em uma coluna vertical de no máx. 430px, como um story. */
+.phone-frame {
+  @apply relative mx-auto h-[100dvh] w-full max-w-[430px] overflow-hidden bg-ink;
+}
+
+@media (min-width: 480px) {
+  .phone-frame {
+    @apply my-0 rounded-none;
+    height: 100dvh;
+  }
+}
+
+/* Texto com brilho neon */
+.glow {
+  text-shadow:
+    0 0 12px rgba(29, 242, 125, 0.65),
+    0 0 48px rgba(29, 242, 125, 0.35);
+}
+
+/* Cartão padrão do Wrapped */
+.wrapped-card {
+  @apply rounded-3xl border border-white/10 bg-card p-6 shadow-card;
+}
+
+/* Botão primário neon */
+.btn-neon {
+  @apply rounded-full bg-neon px-8 py-4 font-display text-sm uppercase tracking-widest text-ink shadow-neon transition-transform active:scale-95;
+  font-weight: 800;
+}
+
+/* Scrollbar invisível mas rolável */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Acessibilidade: respeita usuários que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

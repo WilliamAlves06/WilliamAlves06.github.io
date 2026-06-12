@@ -1,0 +1,2 @@
+Coloque aqui o arquivo "nossa-musica.mp3" para a música de fundo tocar.
+(O nome do arquivo pode ser alterado em src/data.ts → music.mp3Src)
